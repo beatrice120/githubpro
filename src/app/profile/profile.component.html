@@ -3,10 +3,10 @@
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
   crossorigin="anonymous">
-<img src="https://res.cloudinary.com/practicaldev/image/fetch/s--i_sb3chq--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://thepracticaldev.s3.amazonaws.com/i/fk0849hvg2rt13bpqhjy.jpg" width="100px" height="130px" style="margin-left: -25%;">
-  <img src="assets/images/logo.png" style="margin-left: -24%;"width="140%;">
+<img src="https://res.cloudinary.com/practicaldev/image/fetch/s--i_sb3chq--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://thepracticaldev.s3.amazonaws.com/i/fk0849hvg2rt13bpqhjy.jpg" width="100px" height="130px" style="margin-left: -25%;"><!--logo of github-->
+  <img src="assets/images/logo.png" style="margin-left: -24%;"width="140%;"><!--this is the image that show my bar photo of github-->
 
- <nav  class="navbar navbar-inverse" style="height:2px;"><!--this is the part of my navigation bar-->
+ <nav  class="mybar" style="height:40px;"><!--this is the part of my navigation bar-->
     <div class="container">
       <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
@@ -17,18 +17,21 @@
             <span class="icon-bar"></span>
           </button>
       </div>
-        <div id="navbar" class="collapse navbar-collapse">
-            <a style="list-style: none;" class="navbar-brand" href="#">
-              <li>
-                <img id="anim" src="assets/images/duck.gif" alt="github image" height="80" width="80" style=" margin-top: -20%;">
-              </li>
-            </a>
-
-            <ul class="navbar-nav">
+      <!-- part of search bar-->
+        
+            
+            <div class="navbar-nav">
               
-                <li><form action=""><div class="form-group"><input type="text" style="margin-top: 7%;  width: 130%; height: 15%;background-color: rgb(70, 68, 68); border: none; color: ghostwhite;" class="form-control header-search-input jump-to-field js-jump-to-field js-site-search-focus  " placeholder="search or jump to" [(ngModel)]="username" name="username"  (keyup.Enter)="findProfile()"></div></form></li>
-            </ul>
-        </div>
+                <form >
+
+                <div class="form-group">
+
+                <input type="text" style="margin-top:9%;  width: 130%; height: 30%; background-color: black; color:white;" placeholder="search or jump to /..... " [(ngModel)]="username" name="username" (keyup.Enter)="findProfile()"><!-- this line will help us to find the username client entered and search for it so that it can be displayed after pressing enter-->
+                </div>
+              </form>
+            
+          </div>
+  
        
     </div>
 </nav>
