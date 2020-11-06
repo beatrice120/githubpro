@@ -1,29 +1,27 @@
-# Github-API-Search--Update-Angular-cli-7
+# AUTHOR: Beatrice Shabani
+# Project Name: Githubpro
 
-## This app is called [Github Search:mag:](https://zecollokaris.github.io/Github-API-Search--Update-Angular-cli-7/).
+# Project Description
 
-### **This project was done using ANGULAR-Cli Version 7.** 
+ This is a website where users will be allowed to  enter a GitHub username into a form, submit it, and see names and descriptions of that person's public repositories not only that but also A person can also look for repositories and it will be displaying the profile picture of that person.
 
-### **An update to a previous version in Angular-JS.**
+ it will be Using  the GitHub API (Links to an external site.)Links to an external site. to retrieve this information. This API allows 5,000 requests per hour with an API key, but only 60 requests per hour _without_ one. Everyone is therefore required to use their own unique key. GitHub refers to these keys as "Personal Access Tokens".
 
-#### ***Checkout the link for the older Version in Angular-JS*** :point_down:
+## Technical Requirements
+1.  project must contain a well-designed landing page that displays your GitHub information such as your username, your profile photos and a list of your repositories.
 
--> ```https://github.com/zecollokaris/Github-API-Search-AngularJS```
+2. You must place your access key inside the environment.ts file and place it inside the gitignore file.
+3. You must create a HTTP service that uses a promise to make the requests to the GitHub API.
+4. The HTTP request should be able to search for both GitHub users and GitHub repositories.
+5. project must have two classes for the user and repository.
+6.  project must have a proper routing structure that links a GitHub username to the users GitHub repositories.
+7.  project must have a separate routing module.
+8.  project must contain a custom directive and a custom pipe.
+9.  Project must be well designed and visually appealing and of portfolio quality.
+10.  project must have a well-documented README file.
+11.  project must be deployed and the deployed link should be submitted.
 
-#### [Checkout Deployed Site At :mag:](https://zecollokaris.github.io/Github-API-Search--Update-Angular-cli-7/)
 
-
-# DISPLAY
-
-![](Spec.md/GithubSearch.png)
-
-# DESCRIPTION
-
-This is a **Github Search :mag:** application that searches for user and displays their profile info using the ***Github API.***
-
-This is a website where users may enter a GitHub username into a form, submit it, and see names and descriptions of that person's public repositories. 
-
-GitHub API was used to retrieve this information. This API allows ***5,000*** requests per hour with an API key, but only 60 requests per hour _without_ one.
 
 ## User Story
 
@@ -33,105 +31,38 @@ GitHub API was used to retrieve this information. This API allows ***5,000*** re
 
 - Users can make up to 5000 requests per hour due to Github-API integration.
 
-# Prerequisites
 
-To work with Git-Search you need to have some few prerequisites.
-
-This include the following mentioned however below however if you dont have the set below
-
-You can check out the link below for installation instructions!
-
-Link~  ```https://github.com/zecollokaris/Installation```
+# Setup/Installation.
+1. first of all you must be connected to thr internet.
+2. you must have github account.
+3. clone the project
+4. to open it go in yout terminal load where it is by doing cd+ the name of it
+5. to run it write in your terminal ng serve then click on the link they will give you in the terminal it looks like http://localhost:4200/
 
 
-- Node.js
 
-- Angular-JS framework
+# Technology used
 
-- Watchman
+1. Css
 
-- Typescript
+2. Javascript
 
-- Terminal
-
-If you dont have this requirements you could use the link above to help with the installation guide.
-
-# **SETUP/INSTALLATION.**
-
-### **To work With Github Search**
-
-1. You will need Internet connection.
-
-2. You will also need a Webpage URL to load in URL's:
-
-3. To get to use **GIT-SEARCH** fist you need to get to the Github-API-Search--Update-Angular-cli-7 repository. 
-
-Link:-> ```https://github.com/zecollokaris/Github-API-Search--Update-Angular-cli-7```
-
-4. From there you can access Git-search.
-
-5. **Clone** the project.
-
-6. Once you done with cloning and project is on your device.
-
-7. get into project folder (cd into project).
-
-8. On your **bash** terminal Run the command:- 
-
-```
-ng serve
-```
-
-9. Open your prefered **web browser** and load it on local host:
-
-```
-http://localhost:4200/
-```
-
-10. This will load for you Github Search as long as your requirements are satisfied.
-
-
-# TECHNOLOGIES USED
-
-1. Angular Version7 (Framework)
-
-2. Type Script
-
-3. Javascript
+3. Typescript
 
 4. Bootstrap
 
-5. CSS
-
-## Development server
----
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Deployment
----
-
-App was deployed to [Github Pages](https://pages.github.com/) using Angular Cli, by publishing the **dist/** folder.
-
-Link to Deployed [Github Search:mag:](https://zecollokaris.github.io/Github-API-Search--Update-Angular-cli-7/)
+5. Angular version 6
 
 
-```
-https://zecollokaris.github.io/Github-API-Search--Update-Angular-cli-7/
-```
+## More details Contact us on:
 
-## Support and Contact
----
+Tel: 0728913766
+Email: Bshabani120@daviscollege.com
 
--Mobile number: (+254) 798731203
-
--Email Address: collo.kariss@gmail.com
-
--github-username: zecollokaris
 
 ## License
 ---
 
 The app is licensed by MIT.
 
-MIT (c) 2018
+MIT (c) 2020
