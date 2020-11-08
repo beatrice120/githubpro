@@ -3,20 +3,14 @@
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
   crossorigin="anonymous">
+  
 <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--i_sb3chq--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://thepracticaldev.s3.amazonaws.com/i/fk0849hvg2rt13bpqhjy.jpg" width="100px" height="130px" style="margin-left: -25%;"><!--logo of github-->
   <img src="assets/images/logo.png" style="margin-left: -24%;"width="140%;"><!--this is the image that show my bar photo of github-->
 
  <nav  class="mybar" style="height:40px;"><!--this is the part of my navigation bar-->
+  
     <div class="container">
-      <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-            aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-      </div>
+      <br><br>
       <!-- part of search bar-->
         
             
@@ -26,7 +20,7 @@
 
                 <div class="form-group">
 
-                <input type="text" style="margin-top:9%;  width: 130%; height: 30%; background-color: black; color:white;" placeholder="search or jump to /..... " [(ngModel)]="username" name="username" (keyup.Enter)="findProfile()"><!-- this line will help us to find the username client entered and search for it so that it can be displayed after pressing enter-->
+                <input type="text" style="margin-top:9%;  width: 130%; height: 30%; background-color: #201e20; color:white;" placeholder="search or jump to /..... " [(ngModel)]="username" name="username" (keyup.Enter)="findProfile()"><!-- this line will help us to find the username client entered and search for it so that it can be displayed after pressing enter-->
                 </div>
               </form>
             
@@ -36,28 +30,21 @@
     </div>
 </nav>
 
-<!--/.nav-collapse -->
 
+<br><br><br>
 
-<!-- CONTENT SECTION -->
+<!-- my content part-->
 
 <!-- Profile And Location On Panel -->
-<div *ngIf="profile">
-  <div style="margin-top: 10%;" class="panel panel-default">
+<div *ngIf="profile" style="background-color:#201e20 ;"><!--help us to view our profile section--><br>
 
-    <div class="panel-heading">
-        <h1>{{profile.login}}</h1>
-      <span *ngIf="">Works at {{profile.company}}</span> {{profile.location}}
-    </div>
 <!-- Collapse Profile And Location On Panel -->
 
-
-<!--following, public gist, Followers, Following -->
     <div class="panel-body">
 
       <div class="row">
         <div class="col-md-4">
-          <img src="{{profile.avatar_url}}" class="img-thumbnail github-avatar" alt="Profile Image">
+          <img src="assets/images/p.jpg" width="100%" height="90%" alt="Avatar" style=" border-radius: 50%;">
         </div>
         <div class="col-md-8">
           <div class="start">
@@ -81,7 +68,10 @@
 
           </div>
         </div>
-
+        <div class="myheading">
+          <h1 style="color: white; background-size: 10px;" >Beatrice120</h1>
+      </div>
+      
 <!--Collapse following, public gist, Followers, Following -->
 
 
@@ -125,7 +115,7 @@
       </div>
 
     </div>
-  </div>
+
 </div>
 
 <!-- COLLAPSE REPOSITORIES -->
