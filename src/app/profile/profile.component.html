@@ -20,7 +20,7 @@
 
                 <div class="form-group">
 
-                <input type="text" style="margin-top:9%;  width: 130%; height: 30%; background-color: #201e20; color:white;" placeholder="search or jump to /..... " [(ngModel)]="username" name="username" (keyup.Enter)="findProfile()"><!-- this line will help us to find the username client entered and search for it so that it can be displayed after pressing enter-->
+                <input type="text" style="margin-top:9%;  width: 190%; height: 30%; background-color: #201e20; color:white;" placeholder="search or jump to /..... " [(ngModel)]="username" name="username" (keyup.Enter)="findProfile()"><!-- this line will help us to find the username client entered and search for it so that it can be displayed after pressing enter-->
                 </div>
               </form>
             
@@ -35,22 +35,17 @@
 
 <!-- my content part-->
 
-<!-- Profile And Location On Panel -->
+
 <div *ngIf="profile" style="background-color:#201e20 ;"><!--help us to view our profile section--><br>
 
-<!-- Collapse Profile And Location On Panel -->
 
-    <div class="panel-body">
-
-      <div class="row">
+    <div class="pros"><div class="row">
         <div class="col-md-4">
-          <img src="assets/images/p.jpg" width="100%" height="90%" alt="Avatar" style=" border-radius: 50%;">
+          <img src=" {{profile.avatar_url}}" class="img-thumbnail github-avatar" alt="Profile Image" width="100%" height="90%"  style=" border-radius: 50%;">
         </div>
         <div class="col-md-8">
-          <div class="start">
-              <span class="label label-default">{{profile.public_repos}} Public Repos</span>
-              <span class="label label-primary">{{profile.public_gist}} Public Gist</span>
-              <span class="label label-success">{{profile.followers}} Followers</span>
+          <div class="veli">
+              <span class="label label-default">{{profile.public_repos}} Public Repos</span> <span class="label label-primary">{{profile.public_gist}} Public Gist</span> <span class="label label-success">{{profile.followers}} Followers</span>
               <span class="label label-info">{{profile.following}} Following</span>
               <br>
 
@@ -59,7 +54,7 @@
             <ul class="list-group">
                 <li class="list-group-item"><strong>Username:</strong> {{profile.login}}</li>
                 <li class="list-group-item"><strong>Location:</strong> {{profile.location}}</li>
-                <li class="list-group-item"><strong>Email:</strong> {{profile.email}}</li>
+                
                 <li class="list-group-item"><strong>Bio:</strong> {{profile.bio}}</li>
                 <li class="list-group-item"><strong>Member Since:</strong> {{profile.created_at}}</li>
             </ul>
@@ -69,7 +64,9 @@
           </div>
         </div>
         <div class="myheading">
-          <h1 style="color: white; background-size: 10px;" >Beatrice120</h1>
+          <h1 style="color: white; background-size: 10px; text-align: center;" >Beatrice120</h1><br>
+          <p style="color: white; text-align: center; font-size:20px">Edit profile</p>
+                         <img src="assets/images/se.png" >
       </div>
       
 <!--Collapse following, public gist, Followers, Following -->
@@ -93,9 +90,7 @@
                                     <h3>{{repo.name}}</h3>
                                     <!-- Repo Description -->
                                     <p>{{repo.description}}</p>
-                                    <!-- View on Github Button -->
-
-                                    <h4><a href="{{repo.html_url}}" target="_blank">View on github</a></h4>
+                                    <!-- View on Github Button --><h3><a href="{{repo.html_url}}" target="_blank">Open in github</a></h3>
                                 </div>
 
                                 <div class="col-md-3">
@@ -117,5 +112,3 @@
     </div>
 
 </div>
-
-<!-- COLLAPSE REPOSITORIES -->

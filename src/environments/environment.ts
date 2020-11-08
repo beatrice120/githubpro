@@ -5,5 +5,5 @@
 
 export const environment = {
   production: false,
-  apiUrl: "https://github.com/settings/tokens/"
+  apiUrl: "https://github.com/settings/tokens"
 };
