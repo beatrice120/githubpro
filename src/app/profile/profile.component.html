@@ -5,7 +5,8 @@
   crossorigin="anonymous">
   
 <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--i_sb3chq--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://thepracticaldev.s3.amazonaws.com/i/fk0849hvg2rt13bpqhjy.jpg" width="100px" height="130px" style="margin-left: -25%;"><!--logo of github-->
-  <img src="assets/images/logo.png" style="margin-left: -24%;"width="140%;"><!--this is the image that show my bar photo of github-->
+ 
+<img src="assets/images/logo.png" style="margin-left: -24%;"width="140%;"><!--this is the image that show my bar photo of github-->
 
  <nav  class="mybar" style="height:40px;"><!--this is the part of my navigation bar-->
   
@@ -20,7 +21,7 @@
 
                 <div class="form-group">
 
-                <input type="text" style="margin-top:9%;  width: 190%; height: 30%; background-color: #201e20; color:white;" placeholder="search or jump to /..... " [(ngModel)]="username" name="username" (keyup.Enter)="findProfile()"><!-- this line will help us to find the username client entered and search for it so that it can be displayed after pressing enter-->
+                <input type="text" style="margin-top:9%; text-align: center; width: 190%; height: 30%; background-color: #201e20; color:white;" placeholder="search or jump to /..... " [(ngModel)]="username" name="username" (keyup.Enter)="findProfile()"><!-- this line will help us to find the username client entered and search for it so that it can be displayed after pressing enter-->
                 </div>
               </form>
             
@@ -34,9 +35,9 @@
 <br><br><br>
 
 <!-- my content part-->
+<div class="beni" style="background-color: white; margin-left: 10%;">
 
-
-<div *ngIf="profile" style="background-color:#201e20 ;"><!--help us to view our profile section--><br>
+<div *ngIf="profile"><!--help us to view our profile section--><br>
 
 
     <div class="pros"><div class="row">
@@ -68,12 +69,12 @@
           <p style="color: white; text-align: center; font-size:20px">Edit profile</p>
                           <img src="assets/images/se.png">
       </div>
-      
+      </div>
 <!--Collapse following, public gist, Followers, Following -->
 
 
 <!-- REPOSITORIES -->
-          <div class="panel panel-default">
+          <div class="pel" style="background-color: white; width: 90%;">
             <div class="panel-heading">
                 <h3 class="panel-title">Repositories</h3>
             </div>
@@ -84,22 +85,21 @@
                         <div *ngFor="let repo of repos">
                             <div class="row">
                                 
-                                <!-- Div To Display Repositories -->
+                                <!--this part will display Repositories -->
                                 <div class="col-md-9">
-                                    <!-- Repo Name -->
                                     <h3>{{repo.name}}</h3>
-                                    <!-- Repo Description -->
-                                    <p>{{repo.description}}</p>
-                                    <!-- View on Github Button --><h3><a href="{{repo.html_url}}" target="_blank">Open in github</a></h3>
+                                   <p>{{repo.description}}</p>
+                                    <h3><a href="{{repo.html_url}}" target="_blank">Open in github</a></h3><!-- this line View on Github Button -->
                                 </div>
 
                                 <div class="col-md-3">
-                                    <span class="label label-default">{{repo.watchers}} Stars </span>
-                                    <span class="label label-primary">{{repo.forks}} Forks </span>
+                                  <div class="label label-warning">{{repo.watchers}} Watch  </div>
+                                  <div class="label label-default">{{repo.watchers}} Stars  </div>
+                                    <div class="label label-primary">{{repo.forks}} Forks </div>
                                 </div>
 
                             </div>
-                            <hr>
+                          
                         </div>
                     </div>
             </div>
