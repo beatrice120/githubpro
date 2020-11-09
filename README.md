@@ -57,7 +57,8 @@
 
 Tel: 0728913766
 Email: Bshabani120@daviscollege.com
-
+## Link of diployed project :
+https://beatrice120.github.io/githubpro/
 
 ## License
   Copyright (c) [2020] [Beatrice shabani]
