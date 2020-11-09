@@ -53,7 +53,6 @@
 
 5. Angular version 6
 
-
 ## For more details Contact us on:
 
 Tel: 0728913766
