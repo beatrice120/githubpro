@@ -54,7 +54,7 @@
 5. Angular version 6
 
 
-## More details Contact us on:
+## For more details Contact us on:
 
 Tel: 0728913766
 Email: Bshabani120@daviscollege.com
